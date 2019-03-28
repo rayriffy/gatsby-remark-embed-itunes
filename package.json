@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "async-unist-util-visit": "^1.0.0",
-    "backpack-core": "^0.8.3"
+    "backpack-core": "^0.8.3",
+    "lodash": "^4.17.11"
   },
   "scripts": {
     "build": "backpack build",
