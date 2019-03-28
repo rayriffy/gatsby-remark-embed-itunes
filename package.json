@@ -2,7 +2,7 @@
   "name": "gatsby-remark-embed-itunes",
   "version": "1.0.0",
   "description": "Embeding iTunes tracks/albums into your Gatsby remark",
-  "main": "dist/main.js",
+  "main": "build/main.js",
   "repository": "https://github.com/rayriffy/gatsby-remark-embed-apple-music",
   "author": "Phumrapee Limpianchop <contact@rayriffy.com>",
   "license": "MIT",
@@ -23,6 +23,17 @@
     "backpack-core": "^0.8.3",
     "lodash": "^4.17.11"
   },
+  "keywords": [
+    "gatsby",
+    "gatsbyjs",
+    "gatsby-plugin",
+    "gatsby-remark",
+    "remark",
+    "apple-music",
+    "itunes",
+    "embedded",
+    "plugin"
+  ],
   "scripts": {
     "build": "backpack build",
     "dev": "backpack",
