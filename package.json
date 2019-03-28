@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-remark-embed-itunes",
+  "version": "1.0.0",
+  "description": "Embeding iTunes tracks/albums into your Gatsby remark",
+  "main": "dist/main.js",
+  "repository": "https://github.com/rayriffy/gatsby-remark-embed-apple-music",
+  "author": "Phumrapee Limpianchop <contact@rayriffy.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "async-unist-util-visit": "^1.0.0",
+    "backpack-core": "^0.8.3"
+  },
+  "scripts": {
+    "build": "backpack build",
+    "dev": "backpack",
+    "format": "prettier --write --no-semi --list-different './src/**/*.js'",
+    "lint": "eslint ./src/**/*.js",
+    "start": "node ./build/main.js"
+  }
+}
