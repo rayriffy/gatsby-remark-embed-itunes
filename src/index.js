@@ -1,9 +1,9 @@
-import _ from 'lodash'
-import visit from 'async-unist-util-visit'
+const _ = require('lodash')
+const visit = require('async-unist-util-visit')
 
 const ENDPOINT = 'https://embed.music.apple.com/'
 
-export default async ({markdownAST}, options) => {
+const pluginFunction = async ({markdownAST}, options) => {
   const res = await visit(markdownAST, 'inlineCode', async node => {
     if (!node.value.startsWith('itunes:')) return
 
@@ -23,3 +23,5 @@ export default async ({markdownAST}, options) => {
 
   return res
 }
+
+module.exports = pluginFunction
